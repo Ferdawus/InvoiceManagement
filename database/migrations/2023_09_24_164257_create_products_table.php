@@ -27,7 +27,10 @@ return new class extends Migration
             $table->integer('tax')->default(0);
             $table->integer('discount')->default(0);
             $table->date('date')->nullable();
+            $table->string('barcode')->nullable();
+            $table->text('qrcode')->nullable();
             $table->tinyInteger('status')->default(0)->comment('0 => In-Active | 1 => Active');
+            $table->text('note')->nullable();
             $table->text('meta_data')->nullable();
             $table->timestamps();
         });

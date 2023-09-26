@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('customer_name');
             $table->string('contact_number');
             $table->string('alternative_contact_number')->nullable();
-            $table->email('email')->nullable();
+            $table->string('email')->nullable();
             $table->string('credit_limit')->nullable();
             $table->string('address')->nullable();
             $table->decimal('opening_balance')->default(0);

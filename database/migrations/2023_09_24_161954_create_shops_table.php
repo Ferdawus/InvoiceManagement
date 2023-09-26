@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('shops', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('location');
+            $table->string('location')->nullable();
             $table->string('phone');
-            $table->email('email')->nullable();
+            $table->string('email')->nullable();
             $table->string('branch')->nullable();
             $table->text('logo')->nullable();
             $table->text('meta_data')->nullable();
