@@ -43,7 +43,7 @@ h6 {
 --------------------------------------------------------------*/
 #main {
   margin-top: 60px;
-  padding: 20px 30px;
+  padding: 10px 20px 0px 80px;
   transition: all 0.3s;
 }
 
@@ -1235,4 +1235,21 @@ h6 {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #4a5ced !important;
+    --bs-btn-border-color: #4a5ced !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #4a5ced !important;
+    --bs-btn-hover-border-color: #4a5ced !important;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #4a5ced !important;
+    --bs-btn-active-border-color: #4a5ced !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #4a5ced !important;
+    --bs-btn-disabled-border-color: #4a5ced !important;
+    font-family: sans-serif;
 }

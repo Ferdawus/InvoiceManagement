@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Contact;
 use App\Http\Controllers\Controller;
 use App\Models\Customer;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class CustomerController extends Controller
 {
@@ -13,7 +14,8 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        //
+
+        return Inertia::render('Contact/Customer/Index');
     }
 
     /**
@@ -21,7 +23,7 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Contact/Customer/Create');
     }
 
     /**
@@ -29,7 +31,7 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**

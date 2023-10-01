@@ -1,3 +1,7 @@
+<script setup>
+import { Link, router } from "@inertiajs/vue3";
+</script>
+
 <template>
     <aside id="sidebar" class="sidebar">
         <ul class="sidebar-nav" id="sidebar-nav">
@@ -25,9 +29,9 @@
                     data-bs-parent="#sidebar-nav"
                 >
                     <li>
-                        <a href="#">
+                        <Link :href="route('admin.customer.index')">
                             <i class="bi bi-circle"></i><span>Customer</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a href="#">
@@ -153,7 +157,3 @@
     </aside>
     <!-- End Sidebar-->
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>

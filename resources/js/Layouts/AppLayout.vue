@@ -41,10 +41,12 @@ const logout = () => {
         <Banner /> -->
         <Header></Header>
         <Sidebar></Sidebar>
-        <main id="main" class="main">
+        <!-- <div class="container"> -->
+        <main id="main">
             <slot />
         </main>
-        <Footer></Footer>
+        <!-- </div> -->
+        <!-- <Footer></Footer> -->
         <!-- <div class="min-h-screen bg-gray-100"> -->
         <!-- <nav class="bg-white border-b border-gray-100">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
